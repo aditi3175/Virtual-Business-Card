@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD!</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Bussiness Card Generator</h1>
+        <div class="input-section">
+            <label for = "name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your Name" />
+            <label for = "phone">Phone:</label>
+            <input id="phone" type="text" placeholder="Enter your Phone no." />
+            <label for = "title">Title:</label>
+            <input id="title" type="text" placeholder="Enter your Title" />
+            <label for = "website">Website(optional):</label>
+            <input id="website" type="text" placeholder="Enter your Website" />
+            <label for = "location">Location:</label>
+            <input id="location" type="text" placeholder="Enter your Location" />
+            <label for = "email">Email:</label>
+            <input id="email" type="text" placeholder="Enter your Email" />
+            <input id="img" type="file" />
+        </div>
+        <button id="btn">Submit</button>
+        <div class="dropdown">
+            <label>Choose theme</label>
+            <select name="theme" id="themeSelect">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="color">Colorful</option>
+            </select>
+        </div>
+        <div class="card-preview">
+            <h3>Your Card Preview!</h3>
+            <div class="cardOutput">
+                <div class="cardInfo"></div>
+                <div class="cardImage">
+                  <img id="profileimage" src="https://www.w3schools.com/howto/img_avatar.png" alt="Profile Image" />
+                </div>
+            </div>
+        </div>
+        <div class="download-buttons">
+            <button id="dwdimg">Save as Image</button>
+            <button id="dwdpdf">Save as PDF</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
